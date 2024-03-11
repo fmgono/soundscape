@@ -27,4 +27,4 @@ The skills I thoroughly developed during this time include:
 - and more.
 
 
-[Live Demo](https://soundscape.netlify.app/)
+[Live Demo](https://fmgono-soundscape.vercel.app/)
