@@ -1,0 +1,73 @@
+.aside__list {
+  all: unset;
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+
+    color: var(--color-nav-link);
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+
+    svg {
+      width: 2.1rem;
+      height: 2.1rem;
+      fill: var(--color-nav-link);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.close {
+        // when sidebar is shrinked. This is for the svg
+        width: 2.1rem;
+        height: 2.1rem;
+        fill: var(--color-nav-link);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+}
+
+.active {
+  background: var(--color-bg-nav-active);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+a.active,
+a.active svg {
+  color: var(--color-nav-active);
+  fill: var(--color-nav-active);
+}
+
+a.active svg.close {
+  color: var(--color-nav-active);
+  fill: var(--color-nav-active);
+}
+
+// spacing between items after header
+
+.aside__list:nth-of-type(4) {
+  margin-bottom: 3rem;
+}
+
+.aside__list:nth-of-type(9) {
+  margin-top: 3rem;
+}
+
+.aside__list:nth-child(10) {
+  margin-bottom: 3rem;
+}
+
+.aside__text {
+  font-weight: 500;
+}

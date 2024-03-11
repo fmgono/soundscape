@@ -1,0 +1,70 @@
+.header__down {
+  &-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &-item {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-crumb-1);
+
+    &:first-of-type {
+      @media only screen and (max-width: 56.25em) {
+        display: none;
+      }
+    }
+
+    &:last-of-type {
+      font-size: 2rem;
+      font-weight: 500;
+
+      color: var(--color-crumb-2);
+
+      @media only screen and (max-width: 82em) {
+        display: none;
+      }
+    }
+  }
+
+  &-chevron {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-chevron);
+  }
+}
+
+.chevron-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 82em) {
+    display: none;
+  }
+}
+
+.menu {
+  all: unset;
+
+  display: none;
+  cursor: pointer;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--color-menu);
+  }
+
+  @media only screen and (max-width: 82em) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    margin-right: 4rem;
+  }
+}
